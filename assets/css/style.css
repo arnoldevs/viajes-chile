@@ -9,3 +9,13 @@ body * {
 .card-image {
 	height: 10rem;
 }
+
+footer div a {
+	text-decoration: none;
+	color: white;
+	background-color: transparent;
+}
+
+footer div a:hover {
+	color: black;
+}
