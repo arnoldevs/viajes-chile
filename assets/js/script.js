@@ -1,3 +1,9 @@
 $(document).ready(function () {
-	console.log("ready!");
+	$('[data-bs-toggle="tooltip"]')
+		.on("mouseenter", function () {
+			$(this).tooltip("show");
+		})
+		.on("mouseleave", function () {
+			$(this).tooltip("hide");
+		});
 });
