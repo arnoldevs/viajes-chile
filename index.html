@@ -26,16 +26,20 @@
 		<!-- --------- -->
 	</head>
 
-	<body>
+	<body class="bg-black">
 		<!-- Navbar -->
 		<nav
-			class="navbar navbar-expand-lg bg-dark"
+			class="navbar navbar-expand-lg fixed-top"
 			data-bs-theme="dark"
 			id="navbar"
 		>
 			<div class="container">
 				<a class="navbar-brand" href="#">
-					<img src="./assets/img/viajes.svg" alt="main-logo" />
+					<img
+						src="./assets/img/viajes.svg"
+						alt="main-logo"
+						class="main-logo"
+					/>
 					<span>Viajes Chile</span>
 				</a>
 				<button
@@ -52,16 +56,16 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">Inicio</a>
+							<a class="nav-link" aria-current="page" href="#">Inicio</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Quienes Somos</a>
+							<a class="nav-link" href="#about-us">Quienes Somos</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link">Destacados</a>
+							<a class="nav-link" href="#notable-places">Destacados</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link">Contacto</a>
+							<a class="nav-link" href="#contact">Contacto</a>
 						</li>
 					</ul>
 				</div>
@@ -69,8 +73,8 @@
 		</nav>
 		<!-- ------ -->
 
+		<!-- Carousel -->
 		<header>
-			<!-- Carousel -->
 			<div id="carouselExample" class="carousel slide">
 				<div class="carousel-inner">
 					<div class="carousel-item active">
@@ -114,98 +118,143 @@
 					<span class="visually-hidden">Next</span>
 				</button>
 			</div>
-			<!-- -------- -->
 		</header>
+		<!-- -------- -->
 
-		<article>
+		<article class="container">
 			<!-- About section -->
-			<section>
-				<h2>Quienes Somos</h2>
+			<section class="d-none d-md-block bg-black text-white" id="about-us">
+				<h2 class="text-center text-uppercase my-5">Quienes Somos</h2>
 				<hr />
-				<div>
-					<i class="fa-solid fa-plane"></i>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
-						deleniti! Reprehenderit optio sunt repellendus voluptatibus natus
-						quae consectetur? Atque consectetur nesciunt dolor voluptatibus
-						minima pariatur, sunt porro id tempora reiciendis? Voluptates
-						laudantium sunt nulla inventore nisi cupiditate, dolorum corrupti
-						delectus nesciunt eaque exercitationem voluptatum quaerat error
-						velit soluta officia voluptatibus autem odio quae, molestiae
-						distinctio, culpa eos. Veritatis, culpa quod?
-					</p>
-				</div>
-				<div>
-					<i class="fa-solid fa-mountain"></i>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
-						deleniti! Reprehenderit optio sunt repellendus voluptatibus natus
-						quae consectetur? Atque consectetur nesciunt dolor voluptatibus
-						minima pariatur, sunt porro id tempora reiciendis? Voluptates
-						laudantium sunt nulla inventore nisi cupiditate, dolorum corrupti
-						delectus nesciunt eaque exercitationem voluptatum quaerat error
-						velit soluta officia voluptatibus autem odio quae, molestiae
-						distinctio, culpa eos. Veritatis, culpa quod?
-					</p>
-				</div>
-				<div>
-					<i class="fa-solid fa-route"></i>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
-						deleniti! Reprehenderit optio sunt repellendus voluptatibus natus
-						quae consectetur? Atque consectetur nesciunt dolor voluptatibus
-						minima pariatur, sunt porro id tempora reiciendis? Voluptates
-						laudantium sunt nulla inventore nisi cupiditate, dolorum corrupti
-						delectus nesciunt eaque exercitationem voluptatum quaerat error
-						velit soluta officia voluptatibus autem odio quae, molestiae
-						distinctio, culpa eos. Veritatis, culpa quod?
-					</p>
+				<div class="row">
+					<div class="col-4">
+						<i
+							class="fa-solid fa-plane fa-xl bg-info d-md-block text-center py-3"
+						></i>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Recusandae, deleniti! Reprehenderit optio sunt repellendus
+							voluptatibus natus quae consectetur? Atque consectetur nesciunt
+							dolor voluptatibus minima pariatur, sunt porro id tempora
+							reiciendis? Voluptates laudantium sunt nulla inventore nisi
+							cupiditate, dolorum corrupti delectus nesciunt eaque
+							exercitationem voluptatum quaerat error velit soluta officia
+							voluptatibus autem odio quae, molestiae distinctio, culpa eos.
+							Veritatis, culpa quod?
+						</p>
+					</div>
+					<div class="col-4">
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Recusandae, deleniti! Reprehenderit optio sunt repellendus
+							voluptatibus natus quae consectetur? Atque consectetur nesciunt
+							dolor voluptatibus minima pariatur, sunt porro id tempora
+							reiciendis? Voluptates laudantium sunt nulla inventore nisi
+							cupiditate, dolorum corrupti delectus nesciunt eaque
+							exercitationem voluptatum quaerat error velit soluta officia
+							voluptatibus autem odio quae, molestiae distinctio, culpa eos.
+							Veritatis, culpa quod?
+						</p>
+						<i
+							class="fa-solid fa-mountain fa-xl bg-info d-md-block text-center py-3"
+						></i>
+					</div>
+					<div class="col-4">
+						<i
+							class="fa-solid fa-route fa-xl bg-info d-md-block text-center py-3"
+						></i>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Recusandae, deleniti! Reprehenderit optio sunt repellendus
+							voluptatibus natus quae consectetur? Atque consectetur nesciunt
+							dolor voluptatibus minima pariatur, sunt porro id tempora
+							reiciendis? Voluptates laudantium sunt nulla inventore nisi
+							cupiditate, dolorum corrupti delectus nesciunt eaque
+							exercitationem voluptatum quaerat error velit soluta officia
+							voluptatibus autem odio quae, molestiae distinctio, culpa eos.
+							Veritatis, culpa quod?
+						</p>
+					</div>
 				</div>
 			</section>
 			<!-- ------------- -->
 
 			<!-- highlights section -->
-			<section>
-				<h2>Destacados</h2>
+			<section class="bg-black text-white" id="notable-places">
+				<h2 class="text-center text-uppercase my-5">Destacados</h2>
 				<hr />
-				<div>
+				<div
+					class="row justify-content-center justify-content-md-between row-gap-5 mx-auto"
+				>
 					<!-- Card 1 -->
-					<div class="card" style="width: 18rem">
-						<img src="./assets/img/card1.jpg" class="card-img-top" alt="..." />
+					<div
+						class="card col-12 col-md-3 bg-info px-0 border-secondary"
+						style="width: 19rem"
+					>
+						<img
+							src="./assets/img/card1.jpg"
+							class="card-img-top card-image"
+							alt="..."
+						/>
 						<div class="card-body">
 							<p class="card-text">
-								Some quick example text to build on the card title and make up
-								the bulk of the card's content.
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+								Commodi consectetur, aliquam vero quidem repudiandae beatae.
+								harum molestias aspernatur architecto?
 							</p>
 						</div>
 					</div>
 					<!-- Card 2 -->
-					<div class="card" style="width: 18rem">
-						<img src="./assets/img/card2.jpg" class="card-img-top" alt="..." />
+					<div
+						class="card col-12 col-md-3 bg-info px-0 border-secondary"
+						style="width: 19rem"
+					>
+						<img
+							src="./assets/img/card2.jpg"
+							class="card-img-top card-image"
+							alt="..."
+						/>
 						<div class="card-body">
 							<p class="card-text">
-								Some quick example text to build on the card title and make up
-								the bulk of the card's content.
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+								Commodi consectetur, aliquam vero quidem repudiandae beatae.
+								harum molestias aspernatur architecto?
 							</p>
 						</div>
 					</div>
 					<!-- Card 3 -->
-					<div class="card" style="width: 18rem">
-						<img src="./assets/img/card3.jpg" class="card-img-top" alt="..." />
+					<div
+						class="card col-12 col-md-3 bg-info px-0 border-secondary"
+						style="width: 19rem"
+					>
+						<img
+							src="./assets/img/card3.jpg"
+							class="card-img-top card-image"
+							alt="..."
+						/>
 						<div class="card-body">
 							<p class="card-text">
-								Some quick example text to build on the card title and make up
-								the bulk of the card's content.
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+								Commodi consectetur, aliquam vero quidem repudiandae beatae.
+								harum molestias aspernatur architecto?
 							</p>
 						</div>
 					</div>
 					<!-- Card 4 -->
-					<div class="card" style="width: 18rem">
-						<img src="./assets/img/card4.jpg" class="card-img-top" alt="..." />
+					<div
+						class="card col-12 col-md-3 bg-info px-0 border-secondary"
+						style="width: 19rem"
+					>
+						<img
+							src="./assets/img/card4.jpg"
+							class="card-img-top card-image"
+							alt="..."
+						/>
 						<div class="card-body">
 							<p class="card-text">
-								Some quick example text to build on the card title and make up
-								the bulk of the card's content.
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+								Commodi consectetur, aliquam vero quidem repudiandae beatae.
+								harum molestias aspernatur architecto?
 							</p>
 						</div>
 					</div>
@@ -214,8 +263,8 @@
 			<!-- ----------------- -->
 
 			<!-- Form Section -->
-			<div>
-				<h2>Contacto</h2>
+			<section class="bg-black text-white" id="contact">
+				<h2 class="text-center text-uppercase my-5">Contacto</h2>
 				<hr />
 				<form>
 					<div class="mb-3">
@@ -233,19 +282,30 @@
 					</div>
 					<div class="mb-3">
 						<label for="exampleMessage" class="form-label">Mensaje</label>
-						<textarea name="message"></textarea>
+						<textarea class="form-control" name="message" rows="6"></textarea>
 					</div>
-					<button type="submit" class="btn btn-primary">Enviar</button>
+					<div>
+						<button
+							type="submit"
+							class="btn btn-primary bg-info col-12 col-md-1"
+						>
+							Enviar
+						</button>
+					</div>
 				</form>
-			</div>
+			</section>
 			<!-- ------------ -->
 		</article>
 		<!-- Footer -->
-		<h2>Viajes Chile</h2>
-		<i class="fa-brands fa-square-github"></i>
-		<i class="fa-brands fa-linkedin"></i>
-		<i class="fa-brands fa-square-twitter"></i>
-		<i class="fa-brands fa-square-facebook"></i>
+		<footer class="bg-info text-white d-flex justify-content-around mt-5 py-4">
+			<h2 class="text-uppercase mb-auto">Viajes Chile</h2>
+			<div class="align-content-center">
+				<i class="fa-brands fa-square-github fa-2x mx-2"></i>
+				<i class="fa-brands fa-linkedin fa-2x mx-2"></i>
+				<i class="fa-brands fa-square-twitter fa-2x mx-2"></i>
+				<i class="fa-brands fa-square-facebook fa-2x mx-2"></i>
+			</div>
+		</footer>
 		<!-- ------ -->
 
 		<!-- Bootstrap JS -->
